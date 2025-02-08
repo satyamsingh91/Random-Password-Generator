@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+   
+    <div id="box">
+        <label for="">Password Length:</label>
+        <input type="number" min="8" max="20" id="length" value="8"> <br>
+        <input type="checkbox" id="uppercase" checked> Include Uppercase <br>
+        <input type="checkbox" id="lowercase" checked >Include Lowercase <br>
+        <input type="checkbox" id="numbers" checked>Include Numbers <br>
+        <input type="checkbox" id="symbols" checked> Include Symbols <br>
+        <button onclick="generatePassword()">Generate Password</button>
+        <h3>Your Password</h3>
+        <input type="text" id="password" readonly>
+    </div>
+
+
+    <script src="task1.js"></script>
+
+</body>
+</html>
